@@ -1,0 +1,51 @@
+@font-face {
+	font-family: oratorstd;
+	src: url(../font/OratorStd.otf);
+}
+
+body {
+  font: 22px "oratorstd","Lucida Grande", Helvetica, Arial, sans-serif;
+	background: url("../images/background.jpeg");
+}
+
+.green-text {
+	color: #0f0;
+
+}
+
+.login-button {
+	background: #0f0;
+	color: black;
+	border: 1px black;
+	text-align: center;
+}
+.login-button:hover {
+	background: #0f0;
+	color: black;
+}
+
+.login-title {
+	font-size: 50px;
+	margin: 50px 0 20px;
+}
+
+.login-description {
+	color: white;
+}
+
+.white {
+	color: white;
+}
+
+.green {
+	color: #0f0;
+
+}
+.option-box {
+	height: 125px;
+	width: 250px;
+	line-height: 125px;
+	background-color: #0f0;
+	text-align: center;
+	border: 1px solid black;
+}

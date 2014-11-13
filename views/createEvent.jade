@@ -1,0 +1,50 @@
+//Created by richardnunes on 12/11/14.
+extends layout
+block content
+    .row
+        .col-md-4.col-lg-offset-4
+            .text-center.green.login-title FUNdRun
+    form(id="simplify-payment-form", action="/handleNewToken", method="POST", role="form")
+    .row
+        .col-md-4.col-lg-offset-4
+            .form-group
+                input(placeholder="Event Name").form-control
+    .row
+        .col-md-4.col-lg-offset-4
+            .form-group
+                select(style="width:100%").dropdown.btn.btn-default.dropdown-toggle
+                    option(value="bhf") British Heart Foundation
+                    option(value="brc") British Red Cross
+                    option(value="unicef") UNICEF
+                    option(value="emerg") Emergency
+                    option(value="peta") PETA
+                    option(value="stth") St Thomas' Hospital
+                
+    .row
+        .col-md-4.col-lg-offset-4
+            h2.white Challenge
+    .row
+        .col-md-1.col-lg-offset-4
+            .form-group
+                select(style="width:100%").dropdown.btn.btn-default.dropdown-toggle
+                    option(value="Distance") Distance
+                    option(value="Steps") Steps
+                    option(value="Calories") Calories
+        .col-md-3
+            .form-group
+                input(placeholder="Value").form-control
+        //.row
+        //    .col-md-1.col-lg-offset-4
+        //        h4.white Donation
+        //    .col-md-3
+        //        .form-group
+        //            input(placeholder="Total").form-control
+    .row
+        .col-md-1.col-lg-offset-4
+            h4.white People LMT
+        .col-md-3
+            .form-group
+                input(placeholder="Value").form-control
+    .row
+        .col-md-4.col-lg-offset-4
+            a(href="/createChallenge", role="button").btn.btn-primary.btn-lg.login-button Create

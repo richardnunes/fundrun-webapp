@@ -1,0 +1,52 @@
+extends layout
+block content
+    .row
+        .col-md-4.col-lg-offset-4
+            .text-center.green.login-title FUNdRun
+    .row
+        .col-md-2.col-lg-offset-4
+            img(src="../images/person.jpeg", height="155px")
+        .col-md-2.text-right
+            span.white Gianni
+            div.green enthusiast
+            div.white total
+            span.green 40
+                span.white Km
+            div.green 1000
+                span.white calories
+            div.green 928
+                span.white steps
+            div.green 15$
+                span.white raised
+    .row
+        .col-md-4.col-lg-offset-4
+            div.white Current Event
+    .row
+        .col-md-1.col-lg-offset-4
+            img(src="../images/persons.jpeg", height="30px")
+        .col-md-3
+            div.white Hackfest Run - $1000
+        .row
+        .col-md-4.col-lg-offset-4
+            div.white for 1000Km - 
+                span.green 90% completed
+    .row
+        .col-md-4.col-lg-offset-4
+            div.white group: 
+                span.green 890
+                    span.white Km
+    .row
+        .col-md-4.col-lg-offset-4
+            div.white personal:
+                span.green 10
+                    span.white Km
+    .row
+        .col-md-2.col-lg-offset-4.option-box
+            span EDIT PROFILE
+        .col-md-2.option-box
+            a(href="/createEvent", role="button").btn.btn-primary.btn-lg.login-button CREATE EVENT
+    .row
+        .col-md-2.col-lg-offset-4.option-box
+            a(href="/sendDonation", role="button").btn.btn-primary.btn-lg.login-button SEND PAYMENT
+        .col-md-2.option-box
+            span VIEW EVENTS
